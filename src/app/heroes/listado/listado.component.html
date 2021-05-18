@@ -1,0 +1,17 @@
+<p>Listado de heroes</p>
+
+
+<ul>
+    <li *ngFor="let heroe of heroes; let i=index">{{i+1}} {{heroe}}</li>
+</ul>
+
+<b>Borrados</b>
+<ul>
+    <li *ngFor="let borrado of borrados; let i=index">{{i+1}} {{borrado}}</li>
+</ul>
+
+
+
+<button (click)="borrarHeore()">
+    Borrar
+</button>
